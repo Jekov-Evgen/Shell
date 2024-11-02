@@ -143,6 +143,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="creatingFolder.cpp" />
     <ClCompile Include="fileListing.cpp" />
     <ClCompile Include="journeyThroughFolders.cpp" />
     <ClCompile Include="Shell.cpp" />
@@ -152,6 +153,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="connect.h" />
+    <ClInclude Include="creatingFolder.h" />
     <ClInclude Include="fileListing.h" />
     <ClInclude Include="journeyThroughFolders.h" />
   </ItemGroup>

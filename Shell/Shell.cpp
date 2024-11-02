@@ -13,6 +13,7 @@ int main() {
     std::map<std::string, int> checkCommand;
     checkCommand["cdF"] = 1;
     checkCommand["lsF"] = 2;
+    checkCommand["crDF"] = 3;
 
     std::cout << std::filesystem::current_path() << " ";
     std::getline(std::cin, command);
@@ -37,8 +38,11 @@ int main() {
         case 2:
             fileOutput(std::filesystem::current_path().string());
             break;
+        case 3:
+            createDir(std::filesystem::current_path().string());
         default:
             std::cout << "Неизвестная команда" << std::endl;
+            break;
         }
 
         std::cout << std::filesystem::current_path() << " ";
